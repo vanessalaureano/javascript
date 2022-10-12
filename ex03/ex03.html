@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: rgba(137, 43, 226, 0.233);
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: rgba(137, 43, 226, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+        var n1 = Number(window.prompt("Digite um número:"))
+        var n2 = Number(window.prompt("Digite outro número:"))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s} .`) // Concatenação
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // window.prompt recebe valor string
+
+        /*
+            Converter string para number:
+            Number.parseInt(n) - Para número inteiro (por exemplo, 2);
+            Number.parseFloat(n) - Para número real (por exemplo, 1.5);
+            Number(n) - Para número inteiro e real.
+        */
+ 
+        /*
+            Converter number para string:
+            String(n)
+            n.toString()
+        */
+
+        /*
+            Formatando strings:
+
+            var s = 'JavaScript'    
+            'Estou aprendendo s' // não faz interpolação
+            'Estou aprendendo' + s // usa concatenação
+            `Estou aprendendo ${s}` // usa template string (entre crases ``)  
+            
+            var s = 'JavaScript'    
+            s.length // quantos caracteres a string tem
+            s.toUpperCase() // tudo para "MAIÚSCULAS"
+            s.toLowerCase() // tudo para "minúsculas"
+        */
+    </script>
+</body>
+</html>
