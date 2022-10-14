@@ -1,4 +1,4 @@
-function showTime() {
+function carregar() {
 
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
@@ -22,8 +22,4 @@ function showTime() {
         img.src = 'imagens/noite.jpg'
         document.body.style.background = '#10222c'
     }
-}
-
-function initTime() {
-    setInterval(showTime, 1000)
 }
