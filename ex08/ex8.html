@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <form action="#" method="get">
+        <label for="itxtvel">Velocidade do carro:</label>
+        <input type="number" name="txtvel" id="itxtvel" placeholder="Digite sua velocidade">
+
+        <input type="button" value="Verificar" onclick="calcular()">
+
+        <p id="res"></p>
+    </form>
+
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById('itxtvel')
+            var res = window.document.getElementById('res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> km/h.</p>`
+            if (vel > 60) {
+                res.innerHTML += `<p>Você foi <strong>multado</strong> por excesso de velocidade. </p>`
+            }
+
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+
+
+        /*
+            Sequências:
+
+                var n = 3
+                n += 2
+                window.alert(n)
+
+            Condições:
+
+                if(se) else (se não)
+
+                if(condição){
+                    true
+                }
+                else {
+                    false
+                }
+            
+            Tipos de condição:
+                
+                - Condição simples:
+
+                if(condição){
+                    true
+                }
+
+                - Condição composta:
+                
+                if(condição){
+                    true
+                }
+                else {
+                    false
+                }
+        */
+    </script>
+</body>
+</html>
