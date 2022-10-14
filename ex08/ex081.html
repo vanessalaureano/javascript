@@ -30,6 +30,7 @@
             var res = window.document.getElementById('res')
             var vel = Number(txtv.value)
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> km/h.</p>`
+
             if (vel > 60) {
                 res.innerHTML += `<p>Você foi <strong>multado</strong> por excesso de velocidade. </p>`
             }
@@ -51,8 +52,7 @@
 
                 if(condição){
                     true
-                }
-                else {
+                } else {
                     false
                 }
             
@@ -68,9 +68,20 @@
                 
                 if(condição){
                     true
-                }
-                else {
+                } else {
                     false
+                }
+
+                - Condição aninhada:
+
+                if(condição1){
+                    bloco1
+                } else {
+                    if (condição2){
+                        bloco2
+                    } else {
+                        bloco3
+                    }
                 }
         */
     </script>
