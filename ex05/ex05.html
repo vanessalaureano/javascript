@@ -19,7 +19,7 @@
                 5 % 2 = 1 (não é porcentagem, é o resto da divisão inteira)
                 5 ** 2 = 25 (potência 5 elevado ao quadrado)
 
-                Atenção! Ordem de precedência: Quando uma mesma expressão tem SOMA e DIVISÃO, primeiro efetua a DIVISÃO e depois a SOMA.
+                Atenção! Ordem de precedência: Quando em uma mesma expressão tem SOMA e DIVISÃO, primeiro efetua a DIVISÃO e depois a SOMA.
 
                 5 + 3 / 2 = 6.5
 
@@ -30,13 +30,80 @@
                 Ordem de precedência:
                 () 
                 **
-                * / %
+                * / % (mesma ordêm de precedência, então efetua quem apareceu primeiro)
                 + -
- 
+                 
             2) atribuição
-            3) relacionais
+
+                Versão resumida:
+
+                var n = 3
+                n = n + 4   n+=4
+                n = n - 5   n-=5
+                n = n * 4   n*=4
+                n = n / 2   n/=2
+                n = n ** 2  n**=2
+                n = n % 5   n%=5
+
+                Incremento (versão ainda mais resumida):
+
+                var x = 5
+                x = x + 1   x+=1    x++
+                x = x - 1   x-=1    x--
+
+            3) relacionais (valor boleano true ou false)
+
+                5 > 2 true
+                7 < 4 false
+                8 >= 8 true
+                9 <= 7 false
+                5 == 5 true
+                4 != 4 false
+
+                Identidade (operador de identidade restrita, usa três símbolos de igual pra saber se o valor é idêntico):
+
+                5 == 5      true (numer == number)
+                5 == '5'    true (numer == string)
+                5 === '5'   false (number === string - valores iguais, mas tipos diferentes, não é idêntico)
+                5 === 5     true (number === number)
+
             4) lógicos
-            5) ternário
+
+                !   negação
+                &&  conjunção (e)
+                ||  disjunção (ou)
+
+                - Negação (operador binário com dois valores lógicos - true ou false):
+
+                ! true  false (uma coisa que não é verdadeira, é falsa)
+                ! false true (uma coisa que não é falsa, é verdadeira)
+
+                - Conjunção (operador binário com dois valores lógicos - true ou false):
+
+                true && true    true (consegui uma e outra, verdadeiro)
+                true && false   false (consegui uma, mas não outra, falso)
+                false && true   false (consegui uma, mas não outra, falso)
+                false && false  false (não consegui nenhuma, falso)
+
+                - Disjunção (operador binário com dois valores lógicos - true ou false):
+
+                true || true    true (consegui um ou outro, verdadeiro)
+                true || false   true (consegui um ou outro, verdadeiro)
+                false || true   true (consegui um ou outro, verdadeiro)
+                false || false  false (não consegui nenhum, falso)                
+
+                Atenção! Ordem de precedência: Quando em uma mesma expressão tem operadores aritméticos, operadores relacionais e operadores lógicos, primeiro efetua os operadores aritméticos, depois os operadores relacionais e depois os operadores lógicos.
+
+                Se em uma mesma expressão apareceu negação, conjunção e disjunção, primeiro efetua a negação, depois a conjunção e depois a disjunção.
+    
+            5) ternário (possui três partes, três operadores: bloco de teste - teste lógico, bloco de verdadeiro e bloco de falso)
+
+                ? :
+
+                teste ? true : false
+
+                média >= 7.0 ? "Aprovado" : "Reprovado"
+                
         */
     </script>
 </body>
