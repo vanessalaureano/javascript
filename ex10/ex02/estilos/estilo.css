@@ -24,6 +24,20 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
 }
 
+div {
+    text-align: center;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.44);
+    display: block;
+    margin: 20px auto;
+}
+
 footer {
     font-style: italic;
 }
