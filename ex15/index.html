@@ -15,18 +15,18 @@
     <section>
         <div>
             <form action="#" method="get"></form>
-            <label for="inum">Número (entre 1 e 100):</label>
-            <input type="number" name="num" id="inum">
+            <label for="fnum">Número (entre 1 e 100):</label>
+            <input type="number" name="fnum" id="fnum">
 
             <input type="button" value="Adicionar" onclick="adicionar()">
         </div>
         <div>
-            <select name="numero" id="selecionados" size="5">
-                <option>Teste Teste Teste</option>
-            </select><br>
-            
-            <input type="button" value="Finalizar">
+            <select name="flista" id="flista" size="6"></select>
         </div>
+        <div>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="res"></div>
     </section>
     
     <footer>
